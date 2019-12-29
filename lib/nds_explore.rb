@@ -8,6 +8,11 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-
-    pp directors_database
+    finalString = ""
+    specificMovieCounter = 0
+      while directors_database[0][specificMovieCounter] < directors_database[0].length do
+        finalString += "#{directors_database[0][:movies][specificMovieCounter][:title]}\n"
+        specificMovieCounter += 1
+      end
+    return finalString
 end
