@@ -7,7 +7,7 @@ def pretty_print_nds(nds)
   pp nds
 end
 
-pretty_print_nds(directors_database.rb)
+pretty_print_nds(nds)
 
 def print_first_directors_movie_titles
 end
